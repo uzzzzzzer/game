@@ -216,6 +216,17 @@ BotPlayer.prototype.decide = function(cell) {
                     this.gameServer.splitCells(this);
                 }
             }
+            if ((cell.mass > massReq*2) && (this.cells.length <= 2)) { // Will not split into more than 4 cells
+                var splitDist = (4 * (40 + (cell.getSpeed() * 4))) + (cell.getSize() * 1.75); // Distance needed to splitkill
+                var distToTarget = this.getAccDist(cell,this.target); // Distance between the target and this cell
+				
+                if (splitDist*2 >= distToTarget) {
+                    // Splitkill
+			console.log('[Bot] ' + cell.getName() + " has splitted twice")
+                    this.gameServer.splitCells(this);
+		    this.gameServer.splitCells(this);
+                }
+            }
             break;
 		default:
             //console.log("[Bot] "+cell.getName()+": Idle "+this.gameState);

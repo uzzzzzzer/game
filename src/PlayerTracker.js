@@ -4,6 +4,7 @@ var GameServer = require('./GameServer');
 function PlayerTracker(gameServer, socket) {
     this.isOnline = true;
     this.name = "";
+    this.skinname = "";
     this.gameServer = gameServer;
     this.socket = socket;
     this.nodeDestroyQueue = [];

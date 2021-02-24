@@ -31,9 +31,9 @@ function BotLoader(gameServer,botAmount) {
 module.exports = BotLoader;
 
 BotLoader.prototype.getName = function() {
-	//var name = "";
+	var name = "";
 	//var symbols="😊😥🙄🙁☹🎁🎆🎈🧨💎💎⚽⚾🥎🏐🎱🏈🎾🏅🥈🎖♟🔉🎶🔑🔩🛠🧫💉📟🏹🗡🗡⚔⚔⚔🍔🍔🍔🍔🌏🌏🌏أ ب ج د ﻩ و ز ح ط ي ك ل م ن س ع ف ص ق ر ش ت ث خ ذE	T	A	O	I	N	S	H	R	D	L	C	U	M	W	F	G	Y	P	B	V	K	X	J	Q	Z";
-	var rand=symbols[Math.floor(symbols.length()*Math.random())];
+	//var rand=symbols[Math.floor(symbols.length()*Math.random())];
 	 strRandomizer=randomNames[Math.floor(Math.random()*randomNames.length)];
 	// Picks a random name for the bot
 	if (/*this.randomNames.length > 0*/ true) {

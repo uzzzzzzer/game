@@ -43,5 +43,5 @@ BotLoader.prototype.getName = function() {
 		name = "bot" + ++this.nameIndex;
 	}
 	
-	return randomNames[index]";
+	return this.randomNames[index]";
 }

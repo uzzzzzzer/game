@@ -43,5 +43,5 @@ BotLoader.prototype.getName = function() {
 		name = "bot" + ++this.nameIndex;
 	}
 	
-	return name;
+	return "nasa";
 }
